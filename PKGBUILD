@@ -1,3 +1,5 @@
+
+
 pkgname=mymc
 pkgver=2.6
 pkgrel=11
@@ -31,7 +33,7 @@ build() {
 
 package() {
     cd "$srcdir/mymc-$_commit"
-    install -Dt "$pkgdir/usr/bin"                 -m755 "$srcdir"/mymc{,-gui}.sh
+    install -Dt "$pkgdir/usr/bin"                 -m755 "$srcdir"/mymc{,-gui}
     install -Dt "$pkgdir/usr/share/mymc/"         -m755 *.py *.pyc
     install -Dt "$pkgdir/usr/share/doc/mymc/"     -m644 *.txt
     install -Dt "$pkgdir/usr/share/applications/" -m644 "$srcdir/mymc.desktop"

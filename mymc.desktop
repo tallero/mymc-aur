@@ -4,5 +4,5 @@ Name=MyMC
 GenericName=PS2 Memory Card Editor
 Comment=Edit your PS2 Memory Cards
 Icon=mymc
-Exec=mymc-gui.sh %f
+Exec=mymc-gui %f
 Categories=Utility;Game;
